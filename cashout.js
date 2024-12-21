@@ -23,10 +23,10 @@ document.getElementById('cashout-button')
 
         // transaction section is added here 
         const div = document.createElement('div');
-        div.classList.add('bg-slate-200');
+        div.classList.add('bg-white', 'shadow-md', 'rounded-lg', 'p-4', 'm-4');
         div.innerHTML=`
-            <h2>cash out history</h2>
-            <p>cashout amount ${cashOutInputValue} tk and new balance is ${finalBalance}</p>
+            <h2 class="font-bold text-lg mb-2">Cash Out History</h2>
+            <p class="text-gray-400">Cashout amount ${cashOutInputValue} tk and new balance is ${finalBalance}</p>
 
             
         `
