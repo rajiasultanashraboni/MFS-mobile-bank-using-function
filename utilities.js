@@ -14,6 +14,7 @@ function getTextValueById (id){
 function toogleButtonById(id){
     document.getElementById('add-money-form').classList.add('hidden')
     document.getElementById('cashout-money-form').classList.add('hidden')
+    document.getElementById('transaction-section').classList.add('hidden')
     //show form
     document.getElementById(id).classList.remove('hidden')
 }
@@ -21,6 +22,7 @@ function toogleButtonById(id){
 function toogleButtonColor(id){
     document.getElementById('show-add-money').classList.remove('bg-green-400')
     document.getElementById('show-cash-out').classList.remove('bg-green-400')
+    document.getElementById('show-transaction').classList.remove('bg-green-400')
     //show background
     document.getElementById(id).classList.add('bg-green-400')
 }
