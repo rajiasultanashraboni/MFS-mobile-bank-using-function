@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-1">
+            <div class="stats shadow">
+              <div class="stat">
+                <div id="available-balance" class="stat-value">9400</div>
+                <div class="stat-desc">Available balance</div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <!-- button are here 
+              -->
+            <div class="flex justify-between mr-6 gap-4">
+              <button id="show-add-money" class="btn bg-green-400">Add Money</button>
+              <button id="show-cash-out" class="btn bg-green-400">Cash Out</button>
+            </div>
+            <div class="divider"></div>
+            <!-- add money starts  here  -->
+            <div id="add-money-form" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input id="input-add-money"
+                    type="text"
+                    placeholder="your amount"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin number</span>
+                  </label>
+                  <input id="input-pin-number"
+                    type="password"
+                    placeholder="your pin number"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control mt-6">
+                  <button id="addmoney-button" class="btn btn-primary">Add Money</button>
+                </div>
+              </form>
+            </div>
+            <!-- add money ends  here  -->
+             <!-- cash out starts  here  -->
+             <div id="cashout-money-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input id="cashout-amount"
+                    type="text"
+                    placeholder="your amount"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin number</span>
+                  </label>
+                  <input id="cashout-pin-number"
+                    type="password"
+                    placeholder="your pin number"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control mt-6">
+                  <button id="cashout-button" class="btn btn-primary">Cash Out</button>
+                </div>
+              </form>
+            </div>
+             <!-- cash out ends  here  -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="utilities.js"></script>
+    <script src="addmoney.js"></script>
+    <script src="cashout.js"></script>
+    <script src="togglebutton.js"></script>
+  </body>
+</html>
